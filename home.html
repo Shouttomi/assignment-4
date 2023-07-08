@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="spacing">
+        <span class="name-background">EDIBILICC--> </span>
+      </span>
+
+      <main class="flex-icons-nav">
+        <div
+          class="spacing"
+          onmouseover="showBusinessClass('dropdown')"
+          onmouseout="hideBusinessClass('dropdown')"
+        >
+          Business Solutions
+        </div>
+        <div
+          class="spacing"
+          onmouseover="showBusinessClass('dropdown-sec')"
+          onmouseout="hideBusinessClass('dropdown-sec')"
+        >
+          Science
+        </div>
+        <a class="spacinglink" href="data.html" >About</a>
+        <div class="spacing">Pricing</div>
+        <div
+          class="spacing"
+          onmouseover="showBusinessClass('dropdown-third')"
+          onmouseout="hideBusinessClass('dropdown-third')"
+        >
+          Resources
+        </div>
+        <div class="spacing">Contact</div>
+      </main>
+      <div
+        class="dropdown"
+        onmouseover="showBusinessClass('dropdown')"
+        onmouseout="hideBusinessClass('dropdown')"
+      >
+        <main class="solutions-flex">
+          <span class="border-red">Platform</span>
+          <div class="small-font">
+            Drive organisational change with a software solution designed to
+            build a psychologically safe workplace
+          </div>
+        </main>
+
+        <main class="solutions-flex">
+          <span class="border-red" >Services</span>
+          <div class="small-font">
+            Combat workplace psychological health and safety challenges with
+            human-centered solutions.
+          </div>
+        </main>
+      </div>
+      <div
+        class="dropdown-sec"
+        onmouseover="showBusinessClass('dropdown-sec')"
+        onmouseout="hideBusinessClass('dropdown-sec')"
+      >
+        <main class="solutions-flex">
+          <span class="border-red" >Our Approach</span>
+          <div class="small-font">
+            Discover the evidence-base behind our purpose-driven approach to
+            workplace psychological health and safety
+          </div>
+        </main>
+
+        <main class="solutions-flex">
+          <span class="border-red" >Data Science</span>
+          <div class="small-font">
+            Learn how data science can provide you with the insights needed to
+            succeed in today's fast-paced business world
+          </div>
+        </main>
+      </div>
+
+      <div
+        class="dropdown-third"
+        onmouseover="showBusinessClass('dropdown-third')"
+        onmouseout="hideBusinessClass('dropdown-third')"
+      >
+        <main class="solutions-flex">
+          <span class="border-red" >Blog</span>
+          <div class="small-font">
+            The latest insights and ideas to transform your business and build a
+            thriving workforce
+          </div>
+        </main>
+
+        <main class="solutions-flex">
+          <span class="border-red" >WHS Regulations</span>
+          <div class="small-font">
+            Regulations and resources to support workplace psychosocial risk
+            management in australia
+          </div>
+        </main>
+
+        <main class="solutions-flex">
+          <span class="border-red" >FAQs</span>
+          <div class="small-font">
+            Achieve optimal success with helpful resources and additional
+            information on our product and services
+          </div>
+        </main>
+      </div>
+
+      <?xml version="1.0" encoding="iso-8859-1"?>
+
+      <svg
+        class="spacing"
+        fill="#ffff"
+        height="50px"
+        width="50px"
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 512 512"
+        xml:space="preserve"
+      >
+        <g>
+          <g>
+            <path
+              d="M496.327,127.091l-15.673,9.613L281.83,258.623c-7.983,4.859-16.917,7.293-25.84,7.293s-17.826-2.424-25.778-7.262
+			l-0.136-0.084L31.347,134.771l-15.673-9.759L0,115.242v302.717h512V117.488L496.327,127.091z"
+            />
+          </g>
+        </g>
+        <g>
+          <g>
+            <path
+              d="M25.245,94.041l25.161,15.673l25.161,15.673l171.008,106.527c5.841,3.521,13.082,3.511,18.913-0.042l173.652-106.486
+			l25.558-15.673l25.558-15.673H25.245z"
+            />
+          </g>
+        </g>
+      </svg>
+      <div class="spacing1">
+        <button id="signOutButton" >signout</button>
+      </div>
+    
+    </nav>
+
+    <!-- <div class="hello1">
+      <div class="hello"></div>
+      <div class="main">HELLO</div>
+    </div> -->
+
+    <div class="hello1">
+      <div class="hello"></div>
+      <div class="main">Fulfilling <span>every</span> <span>##hustler</span> <span>Needs</span></div>
+    </div>
+
+
+   
+
+    <script>
+      function showBusinessClass(value) {
+        console.log(value);
+        let dropdown = document.querySelector("." + value.toString());
+        console.log(dropdown);
+        dropdown.classList.add("dropdown2");
+      }
+
+      function hideBusinessClass(value) {
+        let dropdown = document.querySelector("." + value.toString());
+        dropdown.classList.remove("dropdown2");
+      }
+
+      const signOutButton = document.querySelector("#signOutButton");
+
+const userSignOut = () => {
+  // Redirect to the main page (authentication page)
+  window.location.href = "index.html";
+};
+
+
+
+signOutButton.addEventListener("click", userSignOut);
+    </script>
+  </body>
+</html>

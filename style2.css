@@ -1,0 +1,142 @@
+
+:root {
+    /* color */
+      --clr-white: hsl(0, 0%, 100%);
+      --clr-primary-5: hsl(0, 0%, 100%);
+      --clr-black: rgb(0, 0, 0);
+     
+    /* fonts */
+      --ff-primary: 'Roboto', sans-serif;
+      --ff-secondary: 'Open Sans', sans-serif;
+    
+    /* other */
+      --transition: all 0.3s linear;
+      --spacing: 0.1rem;
+      --radius: 0.25rem;
+      --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      --max-width: 1170px;
+      --fixed-width: 620px;
+    }
+
+
+*{
+    font-family: "Oswald", sans-serif;
+}
+
+.center1{
+    display: flex;
+    width: 50px;
+ }
+
+#products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.form-control {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    
+}
+
+.flex-main{
+    margin: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.animation1{
+    font-size: 1.5rem;
+}
+
+.locations{
+    font-size: 1.5rem;
+}
+.names{
+    font-size: 2rem;
+    color: #f1e718;
+}
+
+
+input {
+    width: 300px;
+    height: -webkit-fill-available;
+    padding-left: 20px;
+      
+      border: 2px black;
+      /* background-color: rgba(84, 81, 81, 0.477); */
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(255, 213, 0, 0.377), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border:1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+     
+  }
+  input::placeholder {
+    color: grey;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+  }
+
+  button {
+
+    width: 6em;
+     height: 2.5em;
+     font-size: 1em;
+     text-align: center;
+     height: -webkit-fill-available;
+ 
+  
+   border-color: var(--clr-black);
+   /* padding: 0.25rem 0.5rem; */
+   text-transform: capitalize;
+   letter-spacing: var(--spacing);
+   background: var(--clr-primary-5);
+   color: var(--clr-black);
+   transition: var(--transition);
+   cursor: pointer;
+ }
+
+ button:hover {
+    background: #b60926;
+    color: var(--clr-white);
+    border: white;
+  }
+  
+
+ .fixed{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    
+ }
+
+ .hide{
+    display: none;
+ }
+ .active{
+    display: block;
+ }
+
+ .backtohome{
+    position: fixed;
+ }
+
