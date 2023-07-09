@@ -57,11 +57,9 @@
     position: relative;
     text-shadow: 2px 2px 4px rgba(22, 9, 9, 0.5);
     animation: textAnimation 60s ease-in-out infinite;
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
   }
-  .big:hover {
-    animation-play-state: running;
-  }
+  
   
   @keyframes textAnimation {
     0% {
@@ -359,7 +357,26 @@
     animation: animate 5s ease-in-out infinite;
     overflow: hidden; /* Added overflow property */
   }
-  
+
+  .section1{
+    position: relative;
+    top: 170px;
+    display: flex;
+     background-color: #b60926;
+
+     color: white;
+     font-size: 50px;
+     padding: 20px;
+     font-family: "Oswald", sans-serif;
+  }  
+
+  .section1 a{
+    font-size: 20px;
+    width: 50px;
+    color: black;
+    margin-left: 38rem;
+    background-color: #f1e718;
+  }
   .main {
     position: absolute;
     mix-blend-mode: difference;
@@ -368,6 +385,7 @@
     white-space: nowrap;
     font-size: 100px;
     display: flex;
+    gap: 10px;
     
     justify-content: left;
     
@@ -395,3 +413,83 @@
     }
   }
   
+  .spacinglink3{
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .spacinglink3:after {
+    content: "";
+    width: 0;
+    height: 4px;
+    bottom: 10px;
+  
+    background-color: #b60926;
+    position: absolute;
+    left: 5px;
+    transition: 0.4s;
+  }
+  
+  .spacinglink3:hover:after {
+    width: 90%;
+  }
+
+  .features{
+    position: relative;
+    top: 170px;
+    background-color: white;
+    border: 2px;
+    border-color: black;
+    border-style: outset;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+
+
+  }
+
+  .image {
+    height: 350px;
+    margin: auto;
+    width: 350px;
+    display: block;
+    object-fit: cover;
+    border-radius: 2rem;
+    
+    
+    
+  } 
+
+  .contentstart{
+    margin-top: 170px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .jobspacing{
+    padding-left: 20px;
+  }
+
+  .contact1{
+    position: relative;
+    top: 170px;
+  }
+
+  .email-button{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #b60926;
+    padding: 10px 20px;
+    width: 300px;
+    display: block;
+    margin: auto;
+    transition: background-color 0.3s ease;
+  }
+
+  .email-button:hover {
+    background-color: #93201e; /* Change background color on hover */
+  }
